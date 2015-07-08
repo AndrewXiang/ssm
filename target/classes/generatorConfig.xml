@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry
+      location="D:/MySQL/Connector J 5.1.30/mysql-connector-java-5.1.30-bin.jar" />
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+                  connectionURL="jdbc:mysql://127.0.0.1/test" 
+                  userId="dbo" password="dbo" />
+    <javaModelGenerator targetPackage="com.andrewxiang.ssm.pojo" targetProject="ssm/src/main/java" />
+    <sqlMapGenerator targetPackage="com.andrewxiang.ssm.mapping" targetProject="ssm/src/main/java" />
+    <javaClientGenerator targetPackage="com.andrewxiang.ssm.dao" targetProject="ssm/src/main/java" type="XMLMAPPER" />
+    <table schema="test" tableName="user_t" domainObjectName="User" enableInsert="true"  
+            enableSelectByPrimaryKey="true" enableUpdateByPrimaryKey="true" enableDeleteByPrimaryKey="true" 
+            enableSelectByExample="false"    enableDeleteByExample="false" enableCountByExample="false"  enableUpdateByExample="false" >   
+    </table>
+  </context>
+</generatorConfiguration>
