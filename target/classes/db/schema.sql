@@ -11,3 +11,6 @@ CREATE TABLE `user_t`(
 /*测试表数据*/
 
 insert into `user_t` values(1,'测试','aaaa',24);
+insert into `user_t` values(3,'AndrewXiang','1111',25);
+
+select * from user_t;

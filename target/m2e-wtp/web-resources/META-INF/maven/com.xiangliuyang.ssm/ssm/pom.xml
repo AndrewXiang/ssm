@@ -83,6 +83,7 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
+      <!-- 版本号不能弄错，否则会导致test文件夹中的测试类无法正常运行 -->
       <!-- 表示开发的时候引入，发布的时候不会加载此包 -->
       <scope>test</scope>
     </dependency>
